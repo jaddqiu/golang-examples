@@ -5,6 +5,16 @@ import (
 	"os"
 )
 
+/*
+selection-sort
+input: a list of intergers
+output: the souted list of interger, ascending
+algorithm:
+    每轮 选择 剩余最小的值和index， 与当前未排序的第一个值进行交换
+    重复n轮之后， 队列排序完成
+时间复杂度： O(n*n)
+空间复杂度： O(1)
+*/
 func main() {
 	var (
 		logger = log.New(os.Stdout, "logger: ", log.Ldate|log.Ltime|log.Lshortfile)
